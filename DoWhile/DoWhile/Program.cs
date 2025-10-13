@@ -16,12 +16,13 @@ if (kasutajanimi == "user1")
         ruudusuurus = int.Parse(Console.ReadLine());
     }
     while (ruudusuurus < 0 && ruudusuurus > 20);
-    char reakujund = 'e';
+    char reakujund = 'i';
     string üksrida = "";
     int tsüklimuutuja = ruudusuurus;
     do
     {
         üksrida += reakujund;
+        tsüklimuutuja -= 1;
     } while (tsüklimuutuja != 0);
     tsüklimuutuja = ruudusuurus;
     do
@@ -29,5 +30,5 @@ if (kasutajanimi == "user1")
         Console.WriteLine(üksrida);
         tsüklimuutuja -= 1;
     } while (tsüklimuutuja != 0);
-
+    Console.WriteLine($"Palum, siin on sinu ruut, suurusega {ruudusuurus}x{ruudusuurus}");
 }
