@@ -42,35 +42,14 @@ else
         case 1:
             Console.WriteLine("Aitäh, oma Iphone saad tagasi 1 nädala pärast");
             break;
-    }
-    switch (kasutajaTelefon)
-    {
         case 2:
             Console.WriteLine("Aitäh, oma Xiaomi saad tagasi 1 nädala pärast");
             break;
-    }
-    switch (kasutajaTelefon)
-    {
         case 3:
             Console.WriteLine("Aitäh, oma Huawei saad tagasi 1 nädala pärast");
             break;
-    }
-    switch (kasutajaTelefon)
-    {
         case 4:
             Console.WriteLine("Aitäh, oma Samsungi saad tagasi 2 päeva pärast");
             break;
-    }
-    Console.WriteLine("Kas soovid mõnda muud mudelit paradada?");
-    Console.WriteLine("0 - Jah\n1 - ei");
-    int kasutajateinevalik = 0;
-    while (kasutajateinevalik < 0 && kasutajateinevalik > 1)
-    {
-        Console.WriteLine("Palun tee oma valik kirjutades vastav arv");
-        kasutajaValik = int.Parse(Console.ReadLine());
-    }
-    if (kasutajateinevalik == 0)
-    {
-        kasutajaTelefon = kasutajateinevalik;
     }
 }
