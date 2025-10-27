@@ -22,7 +22,41 @@
 //Console.WriteLine("Oled sisestanud järgnevad objektid"); //sõnum
 //for (int i = 0; i < objectArray.Length; i++)
 //{
-//    Console.WriteLine($"{i+1}. Element on: {objectArray[i]}");
+//    Console.WriteLine($"{i + 1}. Element on: {objectArray[i]}");
 //    //kuvame välja reanumbri koos vastava elemendiga, muutuja i abil
 //}
 //Console.ReadLine(); //peatame programmi klahvisisestuse taha
+
+using System.ComponentModel.Design;
+
+string kasutajanimi = "";
+do
+{
+    Console.WriteLine("Palun sisesta kasutajanimi: ");
+    kasutajanimi = Console.ReadLine();
+}
+while (kasutajanimi != "RasmusKopli");
+if (kasutajanimi == "RasmusKopli")
+{
+    string kasutajaparool = "";
+    do
+    {
+        Console.WriteLine($"Tere, {kasutajanimi}! Palun sisesta oma parool: ");
+        kasutajaparool = Console.ReadLine();
+    }
+    while (kasutajaparool != "Volts");
+    if (kasutajaparool == "Volts")
+    {
+        Console.WriteLine("Parool on õige! Olete sisse logitud.");
+    }
+    else if (kasutajaparool != "Volts")
+    {
+        Console.WriteLine($"Vabandust {kasutajanimi}, aga see pole sinu parool.");
+    }
+    
+}
+else if (kasutajanimi != "RasmusKopli")
+{
+    Console.WriteLine("See Kasutajanimi pole registreeritud");
+}
+
